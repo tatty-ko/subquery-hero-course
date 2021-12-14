@@ -1,0 +1,15 @@
+type Block @entity {
+
+  id: ID! #id is a required field
+
+  blockNumber: Int! #blockNumber is a required field
+
+  account_to: String
+  
+  value: BigInt @index
+
+  timestamp: Date
+
+  success: Boolean
+
+}
